@@ -23,7 +23,7 @@ python server.py
       http://localhost:8888/search/{{name}} 
 
 
-### InstantSearch Data Structure  
+### Search Data Structure  
 * Actual Data Structure is implemented in fastDataStructure.py
 * server api interact with instantsearch.py for accesing the Data structure 
 
