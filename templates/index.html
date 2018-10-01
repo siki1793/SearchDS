@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+
+<head>
+      <!-- Internal -->
+      <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">
+      <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='semantic.css')}}">
+      <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='icon.css')}}">
+      <!-- <script src="{{url_for('static',filename='semantic.min.js')}}"></script> -->
+      <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> -->
+      <!-- <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" -->
+      <!-- crossorigin="anonymous"></script> -->
+      <script src="{{url_for('static',filename='jquery-3.3.1.js')}}" type="text/javascript"></script>
+      <script src="{{url_for('static',filename='script.js')}}" type="text/javascript"></script>
+      <title>
+            Sample Search Engine
+      </title>
+</head>
+
+<body>
+      <div class="ui container">
+            <br>
+            <div class="ui secondary menu">
+                  <div class="ui large header item">Search Names</div>
+            </div>
+            <div class="ui divider"></div>
+            <br>
+            <div class="ui grid">
+                  <div class="row">
+                        <div class="one wide column"></div>
+                        <div class="fourteen wide column">
+                              <div class="ui form">
+                                    <div class="field">
+                                          <div class="ui left icon input">
+                                                <input type="text" placeholder="Search users..." id="searchInput" onkeyup="searchFunction();">
+                                                <i class="users icon"></i>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="row">
+                        <div class="one wide column"></div>
+                        <div class="fourteen wide column">
+                              <span id="resultSet"><strong>No Matching found</strong></span>
+                        </div>
+                  </div>
+                  <div class="row">
+                        <div class="one wide column"></div>
+                        <div class="fourteen wide column">
+                              <table class="ui fixed single line table">
+                                    <thead>
+                                          <tr>
+                                                <th>Name</th>
+                                                <th>Character Length</th>
+                                          </tr>
+                                    </thead>
+                                    <tbody id="data">
+                                          <tr>
+                                                <td>John Lilki</td>
+                                                <td>September 14, 2013</td>
+                                          </tr>
+                                          <tr>
+                                                <td>Jamie Harington</td>
+                                                <td>January 11, 2014</td>
+                                          </tr>
+                                          <tr>
+                                                <td>Jill Lewis</td>
+                                                <td>May 11, 2014</td>
+                                          </tr>
+                                    </tbody>
+                              </table>
+                        </div>
+                  </div>
+            </div>
+      </div>
+</body>
+
+</html>
